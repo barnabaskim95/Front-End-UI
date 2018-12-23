@@ -18,7 +18,7 @@ class Card extends React.Component {
                     <Name name={this.props.name}></Name>
                     <Title title={this.props.title}></Title>
                     <Bio bio={this.props.bio}></Bio>
-                    <Thumbs></Thumbs>
+                    <Thumbs name={this.props.name}></Thumbs>
                 </div>
             </div>            
         )

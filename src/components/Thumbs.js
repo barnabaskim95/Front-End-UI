@@ -14,12 +14,8 @@ class Thumbs extends React.Component {
     return (
       <div>
         <div class='rowC'>
-          <div><p class='bio-paragraph'>Want to work with First Last? </p>
-          </div>
-          <div><button onClick={this.increment}><FaThumbsUp /></button>
-          </div>
-          <div><p class='bio-paragraph'>Yes!</p>
-          </div>
+          <p class='bio-paragraph'>Want to work with {this.props.name}?</p>
+          <button class='button' onClick={this.increment}><div class='rowC'><div><FaThumbsUp size={5}/></div><div><p class='bio-paragraph'>Yes!</p></div></div></button>
         </div>
         <div>
           <p class='bio-paragraph'>{this.state.count} people have said Yes!</p>

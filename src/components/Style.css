@@ -12,6 +12,12 @@
     margin:5px;
     color: black;
 }
+.button{
+    vertical-align: text-bottom;
+    background-color:white;
+    border: none;
+    background-blend-mode: lighten;
+}
 .name{
     margin:0;
     padding:0;
