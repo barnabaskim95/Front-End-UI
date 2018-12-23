@@ -1,0 +1,14 @@
+This programming problem is language agnostic. You can use whatever language or framework you'd like to in order to render the content and persist the voting information.
+
+Create a roster page for the G2 Crowd product team, with voting functionality to let people share their excitement!
+
+Render the attached layout, based on data found at this CORS enabled endpoint:
+
+https://api.myjson.com/bins/16roa3
+
+Assume that the results of the API are dynamic. So for instance if we were to hire a new engineer, then the API would return an additional listing...
+
+The voting widget on each listing should be functional, meaning:
+
+* As a visitor to the site, when I vote for a team member, then the number of votes should be incremented, and the voting widget should reflect that I voted
+* As a visitor to the site, I can see how many times each listing has been voted on by other visitors
