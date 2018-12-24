@@ -13,9 +13,9 @@ class Thumbs extends React.Component {
   render() {
     return (
       <div>
-        <div class='rowC'>
+        <div class='row'>
           <p class='bio-paragraph'>Want to work with {this.props.name}?</p>
-          <button class='button' onClick={this.increment}><div class='rowC'><div><FaThumbsUp size={5}/></div><div><p class='bio-paragraph'>Yes!</p></div></div></button>
+          <button class='button' onClick={this.increment}><div class='row'><div><FaThumbsUp size={5}/></div><div><p class='bio-paragraph'>Yes!</p></div></div></button>
         </div>
         <div>
           <p class='bio-paragraph'>{this.state.count} people have said Yes!</p>

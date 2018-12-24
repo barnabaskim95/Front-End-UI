@@ -1,9 +1,4 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import Name from './Name'
-import Title from './Title'
-import Image from './Image'
-import Bio from './Bio'
+import React from 'react';
 import Card from './Card'
 import './Style.css';
 
@@ -23,22 +18,15 @@ class Listing extends React.Component {
         const {workers} = this.state;
         return ([
         <h1>G2 Crowd Team Roster</h1>,
-        <ul class='unOrderedList'>
-            {workers.map(hit => 
-            <li className='lists' key={hit.name}>
-                <Card image={hit.image_url} title={hit.title} bio={hit.bio} name={hit.name}></Card>,
-            
+        <ul class='unordered-list'>
+            {workers.map(worker => 
+            <li className='lists' key={worker.name}>
+                <Card image={worker.image_url} title={worker.title} bio={worker.bio} name={worker.name}></Card>, 
             </li>
             )}
         </ul>
         ]);
-
     }
 }
-/*
-<Name name={hit.name}></Name>
-                <Title title={hit.title}/>
-                <Image image={hit.image_url} />
-                <Bio biography={hit.bio}/>
-                */
+
 export default Listing;

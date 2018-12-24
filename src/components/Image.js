@@ -4,7 +4,7 @@ class Image extends React.Component {
     render(){
         return(
             <div>
-                <img className='Image-Ratio' src={this.props.image}/>
+                <img className='image-ratio' src={this.props.image}/>
             </div>
         )
     }
