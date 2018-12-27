@@ -9,7 +9,7 @@ import './Style.css';
 class Card extends React.Component {
     render(){
         return(
-            <div class="row">
+            <div class="card">
                 <div class="left-child"> 
                     <Image image={this.props.image}></Image>
                 </div>

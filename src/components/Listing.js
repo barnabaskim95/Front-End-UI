@@ -17,7 +17,7 @@ class Listing extends React.Component {
     render() {
         const {workers} = this.state;
         return ([
-        <h1>G2 Crowd Team Roster</h1>,
+        <p className="roster">G2 Crowd Team Roster</p>,
         <ul class='unordered-list'>
             {workers.map(worker => 
             <li className='lists' key={worker.name}>

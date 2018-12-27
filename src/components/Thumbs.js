@@ -4,7 +4,7 @@ import ls from 'local-storage'
 
 class Thumbs extends React.Component {
   state = { 
-    count: ls.get(this.props.name) || 0
+    count: 0 || ls.get(this.props.name)
   }
 
   increment = () => {

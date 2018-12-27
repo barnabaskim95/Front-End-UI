@@ -2,6 +2,17 @@
     display:flex; 
     flex-direction:row;
 }
+.card{
+    display:flex; 
+    flex-direction:row;
+    border-top:0.5px solid grey;
+
+}
+.roster{
+    font-family:"Arial",Arial,sans-serif;
+    color: #EE7600;
+    font-size:5.0vw;
+}
 .left-child{
     flex-basis:20%;
     margin:5px;
@@ -21,12 +32,14 @@
 .name{
     margin:0;
     padding:0;
-    font-size:3.0vw;
+    font-size:4.0vw;
+    color:#303030;
 }
 .title{
     margin:0;
     padding:0;
-    font-size:2.0vh;
+    font-size:3.0vh;
+    color:#303030;
 }
 .header{
     margin:0;
@@ -41,6 +54,7 @@
 }
 .bio-paragraph{
     font-size: 2vmin;
+    color:#303030;
 }
 .image-ratio{
     max-width:100%;
