@@ -5,6 +5,7 @@ This project populates a custom web page built using the React.js framework. The
 ## Available Scripts
 
 In the project directory, you can run:
+### 'npm install' 
 
 ### `npm start`
 
