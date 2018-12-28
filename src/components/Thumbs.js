@@ -4,7 +4,7 @@ import ls from 'local-storage'
 
 class Thumbs extends React.Component {
   state = { 
-    count: 0 || ls.get(this.props.name)
+    count: ls.get(this.props.name) || 0
   }
 
   increment = () => {
@@ -17,11 +17,19 @@ class Thumbs extends React.Component {
     return (
       <div>
         <div class='row'>
-          <p class='bio-paragraph'>Want to work with {this.props.name}?</p>
-          <button class='button' onClick={this.increment}><div class='row'><div><FaThumbsUp size={5}/></div><div><p class='bio-paragraph'>Yes!</p></div></div></button>
+          <p class='like'>Want to work with {this.props.name}?</p>
+          <button class='button' onClick={this.increment}>
+            <div class='row'>
+              <div class='relative'><FaThumbsUp class='like-icon'/></div>
+              <div class='button-text'><p>Yes!</p></div>
+            </div>
+          </button>
         </div>
         <div>
-          <p class='bio-paragraph'> {ls.get(this.props.name) || 0} people have said Yes!</p>
+          <p class='bio-paragraph'>
+            <span class='like-count'>{this.state.count}</span>
+            <span>people have said Yes!</span>
+          </p>
         </div>
       </div>
     )

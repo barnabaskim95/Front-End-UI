@@ -1,67 +1,108 @@
-.row{
-    display:flex; 
-    flex-direction:row;
+.row {
+    display: flex;
+    flex-direction: row;
 }
-.card{
-    display:flex; 
-    flex-direction:row;
-    border-top:0.5px solid grey;
 
+.card {
+    display:flex; 
+    flex-direction: row;
+    border-top: 0.5px solid lightgrey;
+    padding-top: 18px;
 }
-.roster{
-    font-family:"Arial",Arial,sans-serif;
+
+.roster {
+    font-family: "Arial",Arial,sans-serif;
     color: #EE7600;
-    font-size:5.0vw;
+    font-size: 40px;
+    padding-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.left-child{
-    flex-basis:20%;
-    margin:5px;
-    color:black;
-}
-.right-child{
-    flex-basis:80%;
-    margin:5px;
+
+.left-child {
+    flex-basis: 15%;
+    margin: 5px;
     color: black;
 }
-.button{
+
+.right-child {
+    flex-basis: 85%;
+    margin: 5px;
+    color: black;
+}
+
+.button {
     vertical-align: text-bottom;
-    background-color:white;
+    background-color: white;
     border: none;
     background-blend-mode: lighten;
+    color: #3366BB;
 }
-.name{
-    margin:0;
-    padding:0;
-    font-size:4.0vw;
-    color:#303030;
-}
-.title{
-    margin:0;
-    padding:0;
-    font-size:3.0vh;
-    color:#303030;
-}
-.header{
-    margin:0;
-    padding:0;
 
+.button-text {
+    padding-left: 18px;
+    font-size: 12px;
 }
-.unordered-list{
-    color:floralwhite;
+
+.name {
+    margin: 0;
+    padding-bottom: 12px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #303030;
 }
-.lists{
+
+.title {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #303030;
+}
+
+.header {
+    margin:0;
+    padding:0;
+}
+
+.unordered-list {
+    color: floralwhite;
+    border-bottom: 0.5px solid lightgrey;
+}
+
+.lists {
     list-style-type: none;
 }
-.bio-paragraph{
-    font-size: 2vmin;
+
+.bio-paragraph {
+    font-size: 12px;
     color:#303030;
 }
-.image-ratio{
-    max-width:100%;
+
+.image-ratio {
+    max-width: 300px;
     max-height: 100%;
-    object-fit:cover;
-    overflow:hidden;
+    object-fit: cover;
+    overflow: hidden;
 }
-.thumbs{
-    font-size:3px;
+
+.like {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.like-icon {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    padding-top: 12px;
+}
+
+.relative {
+    position: relative;
+}
+
+.like-count {
+    font-weight: 600;
+    margin-right: 4px;
 }

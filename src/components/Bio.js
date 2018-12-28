@@ -5,7 +5,7 @@ class Bio extends React.Component {
     render(){
         return(
             <div class='bio-paragraph'>
-                <p font size='1'>{this.props.bio}</p>
+                <p>{this.props.bio}</p>
             </div>
 
         )
